@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio — Serlysa Zulaiha</title>
+    <link rel="stylesheet" href="css\style.css">
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+     
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="flex">
+        <h1 class="logo">Serlysa Zulaiha</h1>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <h2 class="text-xl font-bold">Hi, I'm <span>Serlysa Zulaiha</span></h2>
+        <p>Frontend Developer & Creative Learner<br>
+            "I love turning ideas into clean and simple interfaces."</p>
+        <button onclick="scrollToSection('projects')">See Projects</button>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+        <h2 class="text-xl font-bold">About Me</h2>
+        <p>
+            Aku seorang pelajar yang sedang mendalami dunia web development.<br><br>
+            Saat ini aku fokus belajar HTML, CSS, dan JavaScript, serta membangun project-project sederhana untuk mengembangkan skill.<br><br>
+
+            Aku punya ketertarikan pada:<br><br>
+            <ul>
+                <li>Desain simpel & bersih</li>
+                <li>Frontend development</li>
+                <li>UI/UX yang nyaman dipakai</li>
+            </ul>
+            
+            <br>
+            Tujuan aku adalah menjadi developer yang bisa membuat website yang fungsional dan enak dilihat.
+        </p>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects">
+        <h2 class="text-xl font-bold">My Projects</h2>
+
+        <div class="project-card">
+            <h3>Project 1 - Potofolio Website</h3>
+            <p>Website portfolio sederhana yang dibuat menggunakan HTML, CSS, dan JavaScript. Dibuat untuk menampilkan data diri, skill, dan project-project yang pernah aku kerjakan.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Project 2 - Landing Page Sederhana</h3>
+            <p>Project yang dibuat selama mengikuti Coding Camp, berisi tampilan web sederhana dengan desain minimalis.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Project 3 - Mini Project Coding Camp</h3>
+            <p>Halaman landing page untuk latihan layout dan style menggunakan Flexbox dan Grid. Fokus pada tampilan rapi dan responsif.</p>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    
+                <!-- Message -->
+            <section id="message-us-page" class="min-h-[500px] p-8">
+            <header>
+                <h2 class="text-xl font-bold">Message Me</h2>
+                <p class="mt-2"> If you have any questions about me, Send me a message and I will reply promptly.</p>
+            </header>
+            <br>
+
+            <form class="mt-6">
+                <!-- Name -->
+            <div class="mb-4">
+                <label class="block mb-2" for="name">Name:</label>
+                <input class="w-full p-2 border rounded" type="text" id="name" name="name" required/>
+            </div>
+
+                <!-- Email -->
+            <div class="mb-4">
+                <label class="block mb-2" for="email">Email:</label>
+                <input class="w-full p-2 border rounded" type="email" id="email" name="email" required/>
+            </div>
+            
+                <!-- Message -->
+            <div class="mb-4">
+                <label class="block mb-2" for="message">Message:</label>
+                <textarea class="w-full p-2 border rounded" id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button class="px-4 py-2 bg-blue-500 text-white rounded" type="button">Send Message</button>
+            </form>
+         </section>
+
+    <script src="js\script.js"></script>
+</body>
+</html>
